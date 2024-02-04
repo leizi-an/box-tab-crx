@@ -1,10 +1,12 @@
 <template>
   <div class="book-marks-content">
     <Time />
+    <SideBookMark />
   </div>
 </template>
 <script setup lang="ts">
 import Time from "./components/Time/index.vue";
+import SideBookMark from "./components/SideBookMark/index.vue";
 </script>
 <style lang="less">
 .book-marks-content {
