@@ -18,7 +18,7 @@ const router = createRouter({
 
 // 导入element-icon
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
-  app.component(`icon-${key.toLowerCase()}`, component);
+  app.component(key, component);
 }
 
 app.use(router);

@@ -7,8 +7,9 @@
 }
   
 
-// 通用背景颜色
+// 通用背景颜色和圆角
 .blur_background {
+	border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
 }
@@ -19,5 +20,57 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+// 左右晃动css动画
+.move_lr_animation {
+    animation: move 3s 0s infinite;
+	-webkit-animation: move 3s 0s infinite;
+	transform-origin: bottom;
+	-webkit-transform-origin: bottom;
+}
+
+@keyframes move {
+	0%,
+	65% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	70% {
+		-webkit-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+
+	75% {
+		-webkit-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+	}
+
+	80% {
+		-webkit-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+
+	85% {
+		-webkit-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+	}
+
+	90% {
+		-webkit-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+
+	95% {
+		-webkit-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+                        
 
 @base_white: #FFF;

@@ -45,13 +45,11 @@ const getCurrentTime = () => {
     margin: 0 8px;
   }
   .time-box {
-    border-radius: 12px;
     text-align: center;
     width: 72px;
     height: 64px;
     line-height: 64px;
-    background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
+    .blur_background();
   }
 }
 </style>
